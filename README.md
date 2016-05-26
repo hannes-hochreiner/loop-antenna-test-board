@@ -24,6 +24,12 @@ Luckily, OSH Park also offers a [2 oz service with thinner boards](http://docs.o
   * Substrate dielectric = 4.35
   * Impedance = 50.1 Ohm
 
+## Antenna design
+
+I implemented the design equations given in J. Van Niekerk paper in JavaScript.
+This helped guide my decisions on the PCB layout.
+I decided to cut the corners to avoid 90 degree bends.
+
 ## BOM
 
   * 2 x 1 pF  capacitors (e.g. AVX 08052U1R0BAT2A C0G ESR ~0.1 Ohm at 500 MHz; Farnell: 7568398)
