@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel src --out-dir bld",
     "build_test": "npm run build && babel src_test --out-dir bld_test",
-    "test": "npm run build_test && jasmine JASMINE_CONFIG_PATH=jasmine.json"
+    "test": "npm run build_test && jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "start": "npm run build && node bld/index"
   },
   "repository": {
     "type": "git",

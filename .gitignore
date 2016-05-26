@@ -4,4 +4,3 @@ bld_test
 kicad/*.bck
 kicad/*.bak
 kicad/*.kicad_pcb-bak
-kicad/*-cache.lib
