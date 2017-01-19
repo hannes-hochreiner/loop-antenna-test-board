@@ -61,4 +61,8 @@ describe("Loop Antenna", () => {
   it("should provide a function to calculate the value of C2", () => {
     expect(Math.round(la.calculateC2(434000000, 52.9e-9, 0.0228 + 0.123 + 0.138, 2.95e-12) * 1e13) / 1e13).toBe(18.4e-12);
   });
+
+  it("should provide a function to calculate the secondary loop length", () => {
+    expect(Math.round(la.calculateSecondaryLoopLength(434000000, 0.275, 1000) * 1e4) / 1e4).toBe(13.8e-3);
+  });
 });

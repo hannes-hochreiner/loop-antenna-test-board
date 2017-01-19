@@ -58,3 +58,7 @@ let c2 = la.calculateC2(frequency, inductance, seriesResistance, c1); // F
 
 console.log(`C1: ${c1 * 1e12} pF`);
 console.log(`C2: ${c2 * 1e12} pF`);
+
+let sll = la.calculateSecondaryLoopLength(frequency, seriesResistance, inputImpedance);
+
+console.log(`secondary loop length: ${sll * 1e3} mm`);

@@ -65,3 +65,7 @@ export function calculateC2(frequency, inductance, seriesResistance, C1) {
 
   return (inductance - 1 / (Math.pow(freqRad, 2) * C1)) / (Math.pow(seriesResistance, 2) + Math.pow(freqRad * inductance - (1 / (freqRad * C1)) , 2));
 }
+
+export function calculateSecondaryLoopLength(frequency, seriesResistance, inputImpedance) {
+  return Math.sqrt(seriesResistance * inputImpedance) / (frequency * permeabilityOfCopper * Math.log(9));
+}
